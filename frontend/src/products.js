@@ -14,7 +14,7 @@ const products = [
   },
   {
     _id: '2',
-    name: 'Cerejas',
+    name: 'Cereja',
     image: '/images/cereja.webp',
     description:
       'As cerejas são a montanha-russa do mundo das frutas. Você começa a viagem com empolgação, mas nunca sabe se vai acabar rindo de alegria ou com uma careta de surpresa. Elas mantêm a emoção nas refeições! Divirta-se fazendo malabarismos para tirar o caroço.',
@@ -40,7 +40,7 @@ const products = [
   },
   {
     _id: '4',
-    name: 'Laranjas',
+    name: 'Laranja',
     image: '/images/laranja.webp',
     description:
       'Descascar uma laranja é como tentar abrir um enigma da natureza. Às vezes, a casca se despedaça em pedaços perfeitos, e outras vezes você parece estar travando uma batalha de gladiadores com ela. É a luta diária do homem contra a casca. Se você está sem papel toalha, basta comer uma laranja. Elas têm uma maneira única de garantir que você nunca saia de uma refeição sem lavar as mãos - ou o rosto, ou a mesa, ou a roupa!',
