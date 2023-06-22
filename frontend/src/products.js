@@ -1,10 +1,10 @@
 const products = [
   {
     _id: '1',
-    name: 'Abacate Surpresa de Sabor',
+    name: 'Abacate',
     image: '/images/abacate.webp',
     description:
-      "Abacate 'Surpresa de Sabor' - Porque todos sabemos que a verdadeira razão pela qual você compra um abacate é para testar sua paciência! Este abacate é o mestre da maturação, mantendo você em suspense e fazendo você se sentir como um detetive do paladar, tentando adivinhar o momento perfeito para se deliciar com ele. Com o 'Surpresa de Sabor', você nunca saberá se vai abrir o tesouro verde perfeito ou um abacate que só quer tirar onda com sua fome. Surpreenda-se a cada corte! 🥑",
+      'Todos sabemos que a verdadeira razão pela qual você compra um abacate é para testar sua paciência! Este abacate é o mestre da maturação, mantendo você em suspense e fazendo você se sentir como um detetive do paladar, tentando adivinhar o momento perfeito para se deliciar com ele. Você nunca saberá se vai abrir o tesouro verde perfeito ou um abacate que só quer tirar onda com sua fome. Surpreenda-se a cada corte! 🥑',
     brand: 'Hass',
     category: 'Drupas',
     price: 6.3,
@@ -14,7 +14,7 @@ const products = [
   },
   {
     _id: '2',
-    name: 'Cerejas Surpresa',
+    name: 'Cerejas',
     image: '/images/cereja.webp',
     description:
       'As cerejas são a montanha-russa do mundo das frutas. Você começa a viagem com empolgação, mas nunca sabe se vai acabar rindo de alegria ou com uma careta de surpresa. Elas mantêm a emoção nas refeições! Divirta-se fazendo malabarismos para tirar o caroço.',
@@ -27,7 +27,7 @@ const products = [
   },
   {
     _id: '3',
-    name: 'Kiwi Duro',
+    name: 'Kiwi',
     image: '/images/kiwi.webp',
     description:
       'Comer kiwis é como participar de uma luta pelo sabor. Você tem que descascar, cortar e, finalmente, cavar com uma colher, tudo para obter um punhado de polpa suculenta. É como um jogo de estratégia, e os kiwis são os mestres do xadrez das frutas.',
@@ -43,7 +43,7 @@ const products = [
     name: 'Laranjas',
     image: '/images/laranja.webp',
     description:
-      'Descascar uma laranja é como tentar abrir um enigma da natureza. Às vezes, a casca se despedaça em pedaços perfeitos, e outras vezes você parece estar travando uma batalha de gladiadores com ela. É a luta diária do homem contra a casca.Se você está sem papel toalha, basta comer uma laranja. Elas têm uma maneira única de garantir que você nunca saia de uma refeição sem lavar as mãos - ou o rosto, ou a mesa, ou a roupa!',
+      'Descascar uma laranja é como tentar abrir um enigma da natureza. Às vezes, a casca se despedaça em pedaços perfeitos, e outras vezes você parece estar travando uma batalha de gladiadores com ela. É a luta diária do homem contra a casca. Se você está sem papel toalha, basta comer uma laranja. Elas têm uma maneira única de garantir que você nunca saia de uma refeição sem lavar as mãos - ou o rosto, ou a mesa, ou a roupa!',
     brand: 'Navelina',
     category: 'Cítricas',
     price: 3.49,
