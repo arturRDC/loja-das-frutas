@@ -1,0 +1,108 @@
+const products = [
+  {
+    _id: '1',
+    name: 'Abacate Surpresa de Sabor',
+    image: '/images/abacate.webp',
+    description:
+      "Abacate 'Surpresa de Sabor' - Porque todos sabemos que a verdadeira razão pela qual você compra um abacate é para testar sua paciência! Este abacate é o mestre da maturação, mantendo você em suspense e fazendo você se sentir como um detetive do paladar, tentando adivinhar o momento perfeito para se deliciar com ele. Com o 'Surpresa de Sabor', você nunca saberá se vai abrir o tesouro verde perfeito ou um abacate que só quer tirar onda com sua fome. Surpreenda-se a cada corte! 🥑",
+    brand: 'Hass',
+    category: 'Drupas',
+    price: 6.3,
+    stockCount: 20,
+    rating: 4.5,
+    numReviews: 12,
+  },
+  {
+    _id: '2',
+    name: 'Cerejas Surpresa',
+    image: '/images/cereja.webp',
+    description:
+      'As cerejas são a montanha-russa do mundo das frutas. Você começa a viagem com empolgação, mas nunca sabe se vai acabar rindo de alegria ou com uma careta de surpresa. Elas mantêm a emoção nas refeições! Divirta-se fazendo malabarismos para tirar o caroço.',
+    brand: 'BrasilFrutt',
+    category: 'Drupas',
+    price: 26.57,
+    stockCount: 7,
+    rating: 4.0,
+    numReviews: 8,
+  },
+  {
+    _id: '3',
+    name: 'Kiwi Duro',
+    image: '/images/kiwi.webp',
+    description:
+      'Comer kiwis é como participar de uma luta pelo sabor. Você tem que descascar, cortar e, finalmente, cavar com uma colher, tudo para obter um punhado de polpa suculenta. É como um jogo de estratégia, e os kiwis são os mestres do xadrez das frutas.',
+    brand: 'Zespri',
+    category: 'Tropicais',
+    price: 29.99,
+    stockCount: 5,
+    rating: 3,
+    numReviews: 12,
+  },
+  {
+    _id: '4',
+    name: 'Laranjas',
+    image: '/images/laranja.webp',
+    description:
+      'Descascar uma laranja é como tentar abrir um enigma da natureza. Às vezes, a casca se despedaça em pedaços perfeitos, e outras vezes você parece estar travando uma batalha de gladiadores com ela. É a luta diária do homem contra a casca.Se você está sem papel toalha, basta comer uma laranja. Elas têm uma maneira única de garantir que você nunca saia de uma refeição sem lavar as mãos - ou o rosto, ou a mesa, ou a roupa!',
+    brand: 'Navelina',
+    category: 'Cítricas',
+    price: 3.49,
+    stockCount: 11,
+    rating: 5,
+    numReviews: 12,
+  },
+  {
+    _id: '5',
+    name: 'Limão',
+    image: '/images/limao.webp',
+    description:
+      'Não precisa de café quando você tem um limão. Sua acidez é como um soco de alarme na sua boca, garantindo que você esteja acordado e alerta em questão de segundos. Prepare-se para uma explosão cítrica!',
+    brand: 'Orange Citrus',
+    category: 'Cítricas',
+    price: 3.99,
+    stockCount: 7,
+    rating: 3.5,
+    numReviews: 10,
+  },
+  {
+    _id: '6',
+    name: 'Maçã',
+    image: '/images/maca.webp',
+    description:
+      'Lembra daqueles conselhos de vida que sua avó costumava dar? Bem, as maçãs são a versão frutífera disso. Elas são a resposta para todas as perguntas sobre alimentação saudável e a solução para qualquer desejo de lanche.',
+    brand: 'Carrefour',
+    category: 'Drupas',
+    price: 7.99,
+    stockCount: 0,
+    rating: 4,
+    numReviews: 12,
+  },
+  {
+    _id: '7',
+    name: 'Mamão',
+    image: '/images/mamao.webp',
+    description:
+      'O mamão é a definição de indecisão. Ele não decide se quer ser doce ou azedo, firme ou mole. É como se ele tivesse uma reunião de comitê dentro de sua casca antes de amadurecer. Se você gosta de frutas com personalidades múltiplas, o mamão é sua escolha perfeita.',
+    brand: 'Caldara',
+    category: 'Tropical',
+    price: 5.14,
+    stockCount: 0,
+    rating: 3,
+    numReviews: 7,
+  },
+  {
+    _id: '8',
+    name: 'Uva',
+    image: '/images/uva.webp',
+    description:
+      'As uvas são conhecidas por serem um lanche saudável, mas elas têm uma tendência a rolar como fugitivas de uma prisão de sabor. Deixe uma uva escapar e você terá uma perseguição emocionante pelo chão da cozinha. Quando você está tendo um dia ruim, pegue um cacho de uvas e comece a esmagá-las. É como terapia de raiva natural. Você pode até fingir que as uvas são seus problemas e assistir a explosão suculenta. É uma experiência terapêutica deliciosa!',
+    brand: 'Doce Mel',
+    category: 'Frutas Vermelhas',
+    price: 8.49,
+    stockCount: 0,
+    rating: 5,
+    numReviews: 4,
+  },
+];
+
+export default products;
