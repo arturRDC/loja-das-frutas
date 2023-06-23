@@ -1,21 +1,33 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from .products import products
 
+
+@api_view(["GET"])
 def getRoutes(request):
-  routes = [
-    '/api/products/',
-    '/api/products/create/',
-    
-    '/api/products/<id>/reviews/',
-    
-    '/api/products/top/',
-    '/api/products/<id>/',
+    routes = [
+        "/api/products/",
+        "/api/products/create/",
+        "/api/products/<id>/reviews/",
+        "/api/products/top/",
+        "/api/products/<id>/",
+        "/api/products/delete/<id>/",
+        "/api/products/<update>/<id>/",
+    ]
+    return Response(routes)
 
-    '/api/products/delete/<id>/',
-    '/api/products/<update>/<id>/',
-  ]
-  return JsonResponse('Hello world', safe=False)
 
+@api_view(["GET"])
 def getProducts(request):
-  return JsonResponse(products, safe=False)
+    return Response(products)
+
+@api_view(["GET"])
+def getProduct(request, pk):
+    product=None
+    for p in products:
+        if p['_id'] == pk:
+            product = p
+            break
+    return Response(product)
