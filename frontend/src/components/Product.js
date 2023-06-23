@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import Rating from './Rating';
 
 const Product = ({ product }) => {
@@ -25,8 +25,7 @@ const Product = ({ product }) => {
             />
           </div>
         </Card.Text>
-
-        <Card.Text as='h3'>${product.price.toFixed(2)}</Card.Text>
+        <Card.Text as='h3'>${product.price}</Card.Text>
       </Card.Body>
     </Card>
   );
