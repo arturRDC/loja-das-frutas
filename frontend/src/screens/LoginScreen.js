@@ -35,31 +35,31 @@ const LoginScreen = () => {
 
   return (
     <FormContainer>
-      <h1>Sign in</h1>
+      <h1>Login</h1>
       {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId='email'>
-          <Form.Label>Endereço de Email</Form.Label>
+          <Form.Label>Email</Form.Label>
           <Form.Control
             type='email'
-            placeholder='Email'
+            placeholder='Digite seu email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           ></Form.Control>
         </Form.Group>
 
         <Form.Group controlId='password'>
-          <Form.Label>Senha</Form.Label>
+          <Form.Label className='pt-2'>Senha</Form.Label>
           <Form.Control
             type='password'
-            placeholder='Senha'
+            placeholder='Digite sua senha'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='primary'>
+        <Button type='submit' variant='primary' className='mt-3'>
           Entrar
         </Button>
       </Form>
