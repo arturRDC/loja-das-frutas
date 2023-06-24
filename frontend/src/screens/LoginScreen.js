@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Form, Button, Row, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
@@ -8,6 +8,7 @@ import Loader from '../components/Loader';
 import Message from '../components/Message';
 import FormContainer from '../components/FormContainer';
 import { login } from '../actions/userActions';
+import { USER_LOGIN_REQUEST } from '../constants/userConstants';
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
@@ -15,15 +16,28 @@ const LoginScreen = () => {
 
   const location = useLocation();
   const redirect = location.search ? location.search.split('=')[1] : '';
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { error, loading, userInfo } = userLogin;
+
+  useEffect(() => {
+    if (userInfo) {
+      navigate('/' + redirect);
+    }
+  }, [navigate, userInfo, redirect]);
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log('submitted');
+    dispatch(login(email, password));
   }
 
   return (
     <FormContainer>
       <h1>Sign in</h1>
+      {error && <Message variant='danger'>{error}</Message>}
+      {loading && <Loader />}
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId='email'>
           <Form.Label>Endereço de Email</Form.Label>
